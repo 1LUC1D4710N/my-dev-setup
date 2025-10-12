@@ -57,7 +57,7 @@ Choose the settings you want to include:
 
 ### 5. Name Your Settings File
 - Click **Next**
-- Browse to save location: `C:\Users\1LUC1D4710N\Desktop\my-dev-setup\vs2026\`
+- Browse to save location: `C:\Users\<USERNAME>\Desktop\my-dev-setup\vs2026\`
 - File name: `vs2026-settings.vssettings`
 - Click **Finish**
 
@@ -66,14 +66,14 @@ You should see: "Export Complete" message
 
 Check that the file exists:
 ```powershell
-Test-Path "C:\Users\1LUC1D4710N\Desktop\my-dev-setup\vs2026\vs2026-settings.vssettings"
+Test-Path "C:\Users\<USERNAME>\Desktop\my-dev-setup\vs2026\vs2026-settings.vssettings"
 ```
 
 ## 📋 After Export
 
 ### Add to Git Repository
 ```powershell
-cd C:\Users\1LUC1D4710N\Desktop\my-dev-setup
+cd C:\Users\<USERNAME>\Desktop\my-dev-setup
 git add vs2026/
 git commit -m "Add Visual Studio 2026 configuration"
 git push origin main
@@ -89,7 +89,7 @@ git push origin main
 
 1. Clone your repository:
    ```powershell
-   git clone https://github.com/1LUC1D4710N/my-dev-setup.git
+   git clone https://github.com/<USERNAME>/my-dev-setup.git
    ```
 
 2. Open Visual Studio 2026
