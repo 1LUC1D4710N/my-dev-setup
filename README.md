@@ -89,6 +89,21 @@ my-dev-setup/
 - Docker/Container support
 - Multi-language support
 
+
+## 🎨 Visual Studio 2026 Configuration
+
+This repository also includes Visual Studio 2026 Community Insider setup:
+
+- **Location:** `vs2026/` directory
+- **Settings Export:** Instructions to export your VS 2026 configuration
+- **Shared Resources:** Python, Git, build tools are shared with VS Code
+
+See [vs2026/README.md](vs2026/README.md) for details.
+
+**To export your VS 2026 settings:**
+1. Open Visual Studio 2026
+2. Tools → Import and Export Settings
+3. Follow instructions in [vs2026/EXPORT-INSTRUCTIONS.md](vs2026/EXPORT-INSTRUCTIONS.md)
 ## 🔒 Security & Privacy
 
 **This repository contains NO:**
@@ -168,3 +183,4 @@ This is a personal setup repository. Extension IDs and package names are referen
 **Last Updated:** October 2025  
 **Platform:** Windows 11  
 **Python Version:** 3.14.0
+
