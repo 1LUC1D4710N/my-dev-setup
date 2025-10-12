@@ -72,7 +72,7 @@ C:\Users\<USERNAME>\Documents\VisualStudio2026Setup\
 **Best for:** Multiple machines, backup, collaboration
 
 ### Current Repository Status
-- **URL:** https://github.com/<YOUR_GITHUB_USERNAME>/my-dev-setup
+- **URL:** https://github.com/1LUC1D4710N/my-dev-setup
 - **Visibility:** Public
 - **Authentication:** Already configured ✅
 
@@ -102,7 +102,7 @@ C:\Users\<USERNAME>\Documents\VisualStudio2026Setup\
 3. Clone your repository:
    ```powershell
    cd C:\Dev  # Or any location you prefer
-   git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-dev-setup.git
+   git clone https://github.com/1LUC1D4710N/my-dev-setup.git
    cd my-dev-setup
    ```
 
@@ -139,7 +139,7 @@ gh repo edit --visibility private
 ```
 
 Or via GitHub website:
-1. Go to: https://github.com/<YOUR_GITHUB_USERNAME>/my-dev-setup/settings
+1. Go to: https://github.com/1LUC1D4710N/my-dev-setup/settings
 2. Scroll to **Danger Zone**
 3. Click **Change visibility**
 4. Select **Make private**
