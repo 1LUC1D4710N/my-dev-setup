@@ -22,7 +22,7 @@ Configuration and extensions for Visual Studio Community 2026 Insider.
 ### GitHub Integration
 - ✅ GitHub Copilot - Active and authenticated
 - ✅ Git source control integration
-- ✅ Connected to account: 1LUC1D4710N
+- ✅ Connected to account: <YOUR_GITHUB_USERNAME>
 
 ### Python Support
 - Uses system Python 3.14.0
@@ -90,7 +90,7 @@ While VS Code and Visual Studio 2026 use different settings formats, they **shar
 
 | Shared Resource | Location |
 |----------------|----------|
-| **Python Installation** | `C:\Users\1LUC1D4710N\AppData\Local\Programs\Python\Python314` |
+| **Python Installation** | `C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python314` |
 | **Python Packages** | Same pip installation (125+ packages) |
 | **Git Configuration** | `~/.gitconfig` |
 | **Git Repositories** | Any local repos |
