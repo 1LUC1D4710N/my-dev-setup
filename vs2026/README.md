@@ -90,7 +90,7 @@ While VS Code and Visual Studio 2026 use different settings formats, they **shar
 
 | Shared Resource | Location |
 |----------------|----------|
-| **Python Installation** | `C:\Users\1LUC1D4710N\AppData\Local\Programs\Python\Python314` |
+| **Python Installation** | `C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python314` |
 | **Python Packages** | Same pip installation (125+ packages) |
 | **Git Configuration** | `~/.gitconfig` |
 | **Git Repositories** | Any local repos |
