@@ -1,0 +1,53 @@
+# VS Code Extensions List
+# Install all with: Get-Content vscode-extensions.txt | Where-Object { $_ -notmatch '^#' -and $_.Trim() } | ForEach-Object { code --install-extension $_ }
+
+# Python Development
+ms-python.python
+ms-python.vscode-pylance
+ms-python.debugpy
+ms-python.vscode-python-envs
+ms-python.black-formatter
+ms-python.isort
+charliermarsh.ruff
+kevinrose.vsc-python-indent
+njpwerner.autodocstring
+
+# Data Science & Jupyter
+ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-toolsai.vscode-jupyter-cell-tags
+ms-toolsai.vscode-jupyter-slideshow
+
+# AI & Productivity
+github.copilot
+github.copilot-chat
+
+# Code Quality
+sonarsource.sonarlint-vscode
+
+# Containers & DevOps
+ms-azuretools.vscode-containers
+ms-vscode-remote.remote-containers
+
+# Web Development
+dbaeumer.vscode-eslint
+firefox-devtools.vscode-firefox-debug
+ms-edgedevtools.vscode-edge-devtools
+
+# Rust Development
+rust-lang.rust-analyzer
+1yib.rust-bundle
+dustypomerleau.rust-syntax
+
+# Database
+mtxr.sqltools
+
+# MCP & Advanced Tools
+buildwithlayer.mcp-integration-expert-eligr
+dhananjaysenday.mcp--inspector
+
+# Other Utilities
+fill-labs.dependi
+ms-vscode.notepadplusplus-keybindings
+qiskit.qiskit-vscode
