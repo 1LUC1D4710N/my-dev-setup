@@ -238,6 +238,14 @@ This is a personal setup repository. Extension IDs and package names are referen
 
 ---
 
+## 📚 Further Documentation
+
+- [VS Code Extensions Guide](docs/EXTENSIONS.md)
+- [Tools & Software Setup Guide](docs/TOOLS.md)
+- [Chat & AI Setup Guide](docs/CHAT.md)
+
+---
+
 **Last Updated:** October 2025  
 **Platform:** Windows 11  
 **Python Version:** 3.14.0
