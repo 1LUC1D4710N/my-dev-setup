@@ -19,17 +19,10 @@ A comprehensive list of all VS Code extensions used in this development environm
   - Debugging support
   - Jupyter Notebook support
   - Environment management
-- **Why It's Essential:** Foundation for all Python development in VS Code
 
 ### ms-python.vscode-pylance
 **Pylance** - Fast, feature-rich language support for Python
-- **Features:**
-  - Type checking
-  - Auto-imports
-  - Code navigation
-  - Semantic highlighting
 - **Why It's Essential:** Provides advanced IntelliSense and type information
-
 ### ms-python.debugpy
 **Python Debugger** - Debugging support for Python
 - **Features:**
@@ -60,7 +53,6 @@ A comprehensive list of all VS Code extensions used in this development environm
 **Ruff** - Extremely fast Python linter
 - **Features:**
   - Fast linting (10-100x faster than alternatives)
-  - Replaces Flake8, isort, and more
   - Auto-fix capabilities
 - **Why It's Essential:** Catches errors and enforces best practices
 
@@ -87,7 +79,6 @@ A comprehensive list of all VS Code extensions used in this development environm
 - **Why It's Essential:** Natural language interface to AI assistance
 
 ---
-
 ## 📊 Data Science & Jupyter
 
 ### ms-toolsai.jupyter
@@ -99,42 +90,21 @@ A comprehensive list of all VS Code extensions used in this development environm
   - Variable explorer
 - **Why It's Essential:** Core tool for data science and exploratory programming
 
-### ms-toolsai.vscode-jupyter-cell-tags
 **Jupyter Cell Tags** - Add metadata to notebook cells
 - **Features:**
   - Tag cells for organization
   - Cell-level metadata
-  - Enhanced workflow
-- **Why It's Essential:** Better notebook organization
-
-### ms-toolsai.vscode-jupyter-slideshow
 **Jupyter Slideshow** - Create presentations from notebooks
 - **Features:**
-  - Convert notebooks to slides
-  - Presentation mode
-  - Interactive demos
-- **Why It's Essential:** Share data science work as presentations
 
 ### ms-toolsai.datawrangler
-**Data Wrangler** - Data cleaning and transformation
-- **Features:**
-  - Visual data exploration
-  - Data transformation tools
   - Generate pandas code
 - **Why It's Essential:** Simplifies data preparation tasks
-
----
-
 ## ✅ Code Quality & Testing
-
 ### sonarsource.sonarlint-vscode
 **SonarLint** - Code quality and security analysis
 - **Features:**
-  - Real-time code analysis
-  - Security vulnerability detection
-  - Code smell detection
   - Best practice suggestions
-- **Why It's Essential:** Maintains high code quality and security
 
 ### ms-python.pylint
 **Pylint** - Comprehensive Python linter
