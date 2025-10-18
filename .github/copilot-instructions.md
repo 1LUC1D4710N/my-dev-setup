@@ -13,10 +13,10 @@ Primary goals for suggestions and edits
 - When modifying dependency lists, update `requirements.txt` and mention verification steps (e.g. run `setup-python-env.ps1` or `pip install -r requirements.txt`).
 
 Where to look for context
-- `README.md` — canonical overview, quick-start commands and verification steps.
-- `docs/` — contains focused guides: `CHAT.md`, `TOOLS.md`, `EXTENSIONS.md`.
-- `vscode-extensions.txt` — canonical extension list used by `install-vscode-extensions.ps1`.
-- `vs2026/` — Visual Studio export instructions, settings and notes. Treat `.vssettings` exports as user-owned data; do not suggest committing secrets.
+- `README.md` — quick pointer; the canonical consolidated setup and verification guide is `SETUP.md` at the repository root.
+- `SETUP.md` — canonical setup, verification steps, and installation notes (replaces the older per-topic docs previously under `docs/`).
+- `vscode-extensions.txt` — curated extension list used by `install-vscode-extensions.ps1`.
+- `vs2026/` — Visual Studio export instructions, settings and notes. Treat `.vssettings` and any IDE workspace/state exports as user-owned data; do not suggest committing secrets or workspace state.
 
 Project-specific conventions and patterns
 - Scripts are PowerShell-first. Use PowerShell idioms (e.g., `$PSScriptRoot`, `Write-Host`, `$LASTEXITCODE`) when adding or editing scripts.
@@ -57,6 +57,9 @@ If you need more context
 - Open `README.md` and `docs/CHAT.md`, `docs/TOOLS.md`, `docs/EXTENSIONS.md` first. If making a behavioural change to a script, run it locally and paste the verification output in your PR description.
 
 When ready, ask for feedback on any unclear sections and which verification steps you'd like automated.
+
+Note about IDE state and cleanup
+- The repository contains a helper script `scripts/remove-vs-from-index.ps1` which can add the correct `.gitignore` entry and remove `vs2026/.vs/` from the git index while keeping the files locally. If files were already pushed and you need them purged from history, request a coordinated history-rewrite using BFG or `git filter-repo`; that requires a force-push and contributor coordination.
 
 CI note — verification tiers
 - Quick PR checks: `.github/workflows/smoke-test.yml` runs `scripts/smoke-test.ps1 -Quick` on pull requests touching scripts, docs, `requirements.txt` and `vscode-extensions.txt`. This validates PATH-level tools only and is fast.
