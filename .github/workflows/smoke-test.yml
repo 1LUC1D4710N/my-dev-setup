@@ -1,0 +1,27 @@
+name: PR smoke test (Windows)
+
+on:
+  pull_request:
+    paths:
+      - 'requirements.txt'
+      - 'scripts/**'
+      - '*.ps1'
+      - 'docs/**'
+      - 'vscode-extensions.txt'
+
+jobs:
+  smoke-test:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run smoke-test (quick)
+        shell: pwsh
+        run: |
+          .\scripts\smoke-test.ps1 -Quick

@@ -1,0 +1,51 @@
+name: Deep verification (Windows)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+jobs:
+  deep-verify:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.14'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            venv\Lib\site-packages
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Create venv
+        shell: pwsh
+        run: |
+          python -m venv venv
+          .\venv\Scripts\Activate.ps1
+
+      - name: Upgrade pip and install requirements
+        shell: pwsh
+        run: |
+          .\venv\Scripts\Activate.ps1
+          python -m pip install --upgrade pip
+          if (Test-Path requirements.txt) {
+            pip install -r requirements.txt
+          } else {
+            Write-Host "requirements.txt not found, skipping install"
+          }
+
+      - name: Run smoke-test (full)
+        shell: pwsh
+        run: |
+          .\venv\Scripts\Activate.ps1
+          .\scripts\smoke-test.ps1
