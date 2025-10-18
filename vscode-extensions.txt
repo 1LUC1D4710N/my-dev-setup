@@ -1,4 +1,3 @@
-```plaintext
 1yib.rust-bundle
 buildwithlayer.mcp-integration-expert-eligr
 charliermarsh.ruff
@@ -41,5 +40,4 @@ redhat.vscode-yaml
 rust-lang.rust-analyzer
 shawnzhong.system-task-manager
 sonarsource.sonarlint-vscode
-
-```
+sonarsource.sonarlint-vscode
