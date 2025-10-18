@@ -75,3 +75,6 @@ tokens.txt
 # Personal configuration
 settings.json
 user-settings.json
+
+# Ignore Visual Studio workspace state
+vs2026/.vs/
