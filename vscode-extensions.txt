@@ -1,26 +1,7 @@
-1yib.rust-bundle
-buildwithlayer.mcp-integration-expert-eligr
-charliermarsh.ruff
-christian-kohler.npm-intellisense
-davidanson.vscode-markdownlint
-dbaeumer.vscode-eslint
-dhananjaysenday.mcp--inspector
-donjayamanne.githistory
-dustypomerleau.rust-syntax
-eamodio.gitlens
-fill-labs.dependi
-firefox-devtools.vscode-firefox-debug
-focus-space.evtx-viewer
-github.copilot
-github.copilot-chat
-kevinrose.vsc-python-indent
-mechatroner.rainbow-csv
-ms-azuretools.vscode-containers
-ms-edgedevtools.vscode-edge-devtools
-ms-kubernetes-tools.vscode-kubernetes-tools
-ms-python.black-formatter
-ms-python.debugpy
-ms-python.isort
+# VS Code Extensions List
+# Install all with: Get-Content vscode-extensions.txt | Where-Object { $_ -notmatch '^#' -and $_.Trim() } | ForEach-Object { code --install-extension $_ }
+
+# Python Development
 ms-python.python
 ms-python.vscode-pylance
 ms-python.vscode-python-envs
@@ -36,8 +17,3 @@ mtxr.sqltools
 mutantdino.resourcemonitor
 njpwerner.autodocstring
 qiskit.qiskit-vscode
-redhat.vscode-yaml
-rust-lang.rust-analyzer
-shawnzhong.system-task-manager
-sonarsource.sonarlint-vscode
-sonarsource.sonarlint-vscode
